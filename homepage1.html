@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf98ff2373.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homepage1.css" type="text/css">
+    <script type="text/javascript" src="homepage1.js"></script>
+    <title>SICSR - Video Library</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="nav-container">
+                <div class="left-menu">
+                    <img class="logo" src="Pictures/sicsr.png" alt="logo">
+                    <a class="menu-item" href="#">Home</a>
+                    <a class="menu-item" href="#avc">Academic Video Lectures</a>
+                    <a class="menu-item" href="#gjs">Golden Jublie Series</a>
+                    <a class="menu-item" href="#sv">Swayam/NPTEL Videos</a>
+                    <a class="menu-item" href="#oh">Other Videos</a>
+                </div>
+                <div class="right-menu">
+                    <div class="search-bar">
+                        <input class="input-box" type="search " name="search " placeholder="Search ">
+                        <div class="search-icon">
+                            <i class="fas fa-search "></i>
+                        </div>
+                    </div>
+                    <i class="fas fa-bell  menu-item"></i>
+                    <img class="small-img menu-item "
+                        src="Pictures/userimages.jpeg"
+                        alt="actor-img ">
+                    <i class="fas fa-caret-down  menu-item"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <header class="nm-collections-header">
+            <h1 class="nm-collections-header-name">SICSR - Video Library</h1>
+            <p class="nm-collections-header-description">SICSR - Video Library is a platform for students and teachers
+                to access the daily online recorded video lecture and watch many more academic videos. you can watch
+                anywhere,anytime. <u>WATCH NOW</u></p>
+            <!-- <h4>Name: Amol Borkar</h4>
+            <h4>PRN: 12</h4>
+            <h4>Batch: MBA-IT (SEM 1) (2020-2022)</h4> -->
+        </header>
+
+        <!-- Home/Recently Added -->
+        <section class="main-container">
+            <div class="headings" id="home">
+                <h1 id="home">Home/Recently Added</h1>
+            </div>
+            <div class="row1">
+                <div class="movie-card-wrapper">
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="othervideo2()"><img class="movie-img"
+                            src="Pictures/IIMB1.jpg"    
+                            alt="movie-img"></a>
+                            <span class="poster_title">Secrets of Life</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="acadvideo()"><img class="movie-img"
+                            src="Pictures/RDBMS-1NF-1.png"    
+                            alt="movie-img"></a>
+                            <span class="poster_title">RDBMS 1NF</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="gjlvideo()"><img class="movie-img"
+                            src="Pictures/GJL-GA.jpg"   
+                            alt="movie-img"></a>
+                            <span cass="poster_title">Shri. Javed Akhter</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="othervideo1()"><img class="movie-img"
+                                src="Pictures/MapPhysics1.jpg"
+                                alt="movie-img"></a>
+                                <span class="poster_title">The Map of Physics</span>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>  
+
+        </section>
+
+        <!-- Academic Video Lectures -->
+        <section class="main-container">
+            <div class="headings" id="avc" onclick="acadvideo()">
+                <h1 id="avc">Academic Video Lectures</h1>
+            </div>
+            <div class="row1">
+                <div class="movie-card-wrapper">
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="acadvideo()"><img width="100%" class="movie-img"
+                            src="Pictures/Java_Package.png"     
+                            alt="movie-img"></a>
+
+                            <span class="poster_title">Java Package</span>
+
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="acadvideo()"><img class="movie-img"
+                                src= "Pictures/Java_Swing_Part1.png"
+                                alt="movie-img"></a>
+                        
+                        <span class="poster_title">Java Swing Part 1</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="acadvideo()"><img class="movie-img"
+                                src="Pictures/RDBMS-1NF-1.png"
+                                alt="movie-img"></a>
+                        <span class="poster_title">RDBMS 1NF</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="acadvideo()"><img class="movie-img"
+                            src="Pictures/RDBMS-2NF-2.png"   
+                            alt="movie-img"></a>
+                            <span class="poster_title">RDBMS 2NF</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="acadvideo()"><img class="movie-img"
+                                src="Pictures/Pearsonian_BBSDA.png"
+                                alt="movie-img"></a>
+                                <span class="poster_title">BBSDA Pearsonian</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="acadvideo()"><img
+                                class="movie-img"
+                                src="Pictures/KarlPearsonian_BBSDA.png"
+                                alt="movie-img"></a>
+                                <span class="poster_title">BBSDA KarlPearsonian</span>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Golden Jublie Series -->
+        <section class="main-container">
+            <div class="headings" id="gjs" onclick="gjlvideo()">
+                <h1 id="gjs">Golden Jublie Series</h1>
+            </div>
+            <div class="row1">
+                <div class="movie-card-wrapper">
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="gjlvideo()"><img width="100%" class="movie-img"
+                            src="Pictures/gjs1.jpg"   
+                            alt="movie-img"></a>
+                            <span class="poster_title">Shri Amitabh Kant</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="gjlvideo()"><img class="movie-img"
+                                src="Pictures/GJL-SG.JPG"
+                                alt="movie-img"></a>
+                                <span class="poster_title">Shri. Sourav Ganguly</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="gjlvideo()"><img class="movie-img"
+                            src="Pictures/GJL-GA.jpg"   
+                            alt="movie-img"></a>
+                            <span cass="poster_title">Shri. Javed Akhter</span>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+          <!-- Other Videos -->
+          <section class="main-container">
+            <div class="headings" id="oh">
+                <h1 id="oh">Others Videos</h1>
+            </div>
+            <div class="row1">
+                <div class="movie-card-wrapper">
+                    
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="othervideo1()"><img class="movie-img"
+                                src="Pictures/MapPhysics1.jpg"
+                                alt="movie-img"></a>
+                                <span class="poster_title">The Map of Physics</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#" onclick="othervideo2()"><img class="movie-img"
+                                src="Pictures/IIMB1.jpg"
+                                alt="movie-img"></a>
+                         <span class="poster_title">Secrets of Life</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <!-- Swayam/NPTEL Videos -->
+        <section class="main-container">
+            <div class="headings" id="sv">
+                <h1 id="sv">Swayam/NPTEL Videos (Coming Soon)</h1>
+            </div>
+            <div class="row1">
+                <div class="movie-card-wrapper">
+                    <div class="movie-card">
+                        <a target="_blank" href="#"><img width="100%" class="movie-img"
+                                src="Pictures/Lec3.png"
+                                alt="movie-img"></a>
+                                <span class="poster_title">Lecture 03 Innovation in Cuurent Envionment</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#"><img class="movie-img"
+                            src="Pictures/lec8.png"    
+                            alt="movie-img"></a>
+                            <span class="poster_title">Lecture 08 Idea management system</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#"><img class="movie-img"
+                                src="Pictures/BlueOcean1.png"
+                                alt="movie-img"></a>
+                                <span class="poster_title">Lecture 19 Blue Ocean I Strategy</span>
+                    </div>
+                    <div class="movie-card">
+                        <a target="_blank" href="#"><img class="movie-img"
+                            src="Pictures/BlueOcean2.png"    
+                            alt="movie-img"></a>
+                            <span class="poster_title">Lecture 19 Blue Ocean II Strategy</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+      
+    </main>
+
+    <footer class="footer">
+        <p>Questions? Call 022-5861-26113</p>
+        <p>JavaScript Project Developed By: Amol Borkar & Manasi Bhagat</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Social Media</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Terms & Condition</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="login.css" type="text/css">
+  <script type="text/javascript" src="login.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+
+<body class="loginbody" onload="GenerateCaptcha();">
+  <div class="wrapper">
+    <div class="loginheader">
+      <img src="Pictures/sicsr.png" alt="" />
+    </div>
+    <div class="login">
+      <form class="signin-form" action="">
+        <h1 class="title">Sign In</h1>
+
+        <div class="field">
+            <input type="text" id="username" class="text-input" required oninput="usernameChange()">
+            <span class="floating-label" id="userSpan">Email address <span class="required">*</span></span>
+            <p id="usernameP">Invalid Email ID</p>
+        </div>
+
+        <div class="field">
+            <input type="password" id="password" class="text-input" required oninput="passwordChange()">
+            <span class="floating-label test">Password <span class="required">*</span></span>
+            <p id = "passwordP">Invalid Password</p>
+        </div>
+
+        <div class="row">
+          <input type="text" id="txtCaptcha"
+            style="text-align: center;padding-left:0px;border: none; font-weight: bold; font-size: 20px; font-family: Modern"
+            readonly="readonly" />
+          <img src="Pictures/refresh.png" aria-hidden="true" class="ReloadBtn" onclick="GenerateCaptcha();">
+        </div>
+        <div class="field">
+          <input type="text" id="txtCompare" class="text-input" required oninput="captchaChange()"/>
+          <span class="floating-label test">Enter the Captcha <span class="required">*</span></span>
+          <p id = "captchaP">Invalid Captcha </p>
+        </div>
+        <button type="button" class="signin-btn" onclick="submitFormFunct(ValidCaptcha());">Sign In</button>
+      </form>
+      <p id="log"></p>
+    </div>
+  </div>
+  <footer class="footerlogin">
+    <p>Questions? Call 022-5861-26113</p>
+    <p>JavaScript Project Developed By: Amol Borkar & Manasi Bhagat</p>
+    <div class="footerlogin-cols">
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Social Media</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Terms & Condition</a></li>
+      </ul>
+    </div>
+
+  </footer>
+  </div>
+</body>
+
+</html>

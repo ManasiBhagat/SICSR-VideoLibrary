@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #181717;
+    color: white;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    box-shadow: 0 2px 5px black;
+    position: fixed;
+    top: 0;
+    padding: 12px 10px;
+}
+
+#nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 0 8px;
+}
+
+.logo {
+    width: 130px;
+    cursor: pointer;
+}
+
+.menu-item {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.right-menu i {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.small-img {
+    width: 30px;
+    height: 30px;
+}
+
+.left-menu {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+.main-container {
+    padding: 10px;
+  }
+
+.input-box {
+    width: 300px;
+    padding: 10px 12px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 30px;
+    background-color: black;
+    color:white;
+    border-bottom: 1px solid gray;
+}
+
+.search-bar {
+    position: relative;
+    margin: auto;
+}
+
+.search-icon {
+    padding: 9px 12px;
+    height: 35px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    background-color: black;
+}
+
+.search-icon>i {
+    font-size: 18px;
+}
+
+main {
+    margin: 80px 0 auto auto;
+}
+
+.headings h4 {
+    margin-right: 8px;
+}
+
+.headings {
+    display: flex;
+    align-items: center;
+    margin: 0 35px;
+}
+.movie-card-wrapper {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    margin: 0 35px;
+}
+
+.movie-card {
+    width: 15%;
+    transition: transform 1s ease-in;
+    margin: 0 12px;
+}
+
+.movie-card:hover {
+    transform: scale(1.2);
+}
+
+.movie-img {
+    width: 110%;
+    height: 215px;
+    /* padding:50px 50px; */
+}
+
+.heading2 {
+    margin: 0 45px;
+}
+
+
+
+
+
+
+
+
+/*responsive design*/
+
+@media(max-width:992px) {
+    main {
+        margin: 0 auto;
+    }
+    .movie-card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .movie-card {
+        width: 31%;
+    }
+    .menu-item {
+        display: none;
+    }
+    
+}
+
+@media(max-width:768px) {
+    .search-bar {
+        display: none;
+    }
+    .menu-item {
+        display: none;
+    }
+    main {
+        margin: 0 auto;
+    }
+    .movie-card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .movie-card {
+        width: 48%;
+    }
+    .left-menu {
+        margin-left: 0;
+    }
+}
+
+@media(max-width:400px) {
+    .logo {
+        margin-left: 0;
+    }
+    .search-bar {
+        display: none;
+    }
+    .menu-item {
+        display: none;
+    }
+    main {
+        margin: 2px auto;
+    }
+    .movie-card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .movie-card {
+        width: 100%;
+    }
+    .left-menu {
+        margin-left: 0;
+    }
+}
+
+/* SICSR Video Library Descriptio n Header */
+
+.nm-collections-header {
+    margin: 36px 0;
+    padding-top: 1px;
+}
+
+.nm-collections-header .nm-collections-header-name {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 598px;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.nm-collections-header .nm-collections-header-description {
+    max-width: 598px;
+    font-size: 19px;
+    margin-top: 12px;
+}
+
+.headings h1 {
+    margin-right: 8px;
+}
+
+.headings {
+    display: flex;
+    align-items: center;
+    margin: 0 45px;
+}
+
+
+/* LINKS */
+.link {
+    padding: 50px;
+  }
+
+/* Footer */
+
+	.footer {
+		max-width: 70%;
+		margin: 1rem auto;
+		overflow: auto;
+	}
+
+	.footer,
+	.footer a {
+		color: #999;
+		font-size: 1.2rem;
+	}
+
+	.footer p {
+		margin-bottom: 1.5rem;
+	}
+
+	.footer .footer-cols {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 2rem;
+	}
+
+	.footer li {
+		line-height: 1.9;
+	}
+
+    .poster_title
+    {
+        color: #fff;
+        display: block;
+        text-align: center;
+        margin-top: 2px; 
+    }
+
+    ul {
+        list-style-type: none;
+        }
+      a:link { 
+        text-decoration: none; 
+    } 
